@@ -217,7 +217,7 @@ header.sticky ul li a {
 
 .about{
     background-color: #fff;
-    border-radius: 3%;
+    
     padding-top: 50px;
 }
 
@@ -269,7 +269,7 @@ img{
 .habilidades{
     background: #111;
     padding-top: 50px;
-    border-radius: 2%;
+    
 }
 
 .cabezera.white{
@@ -332,13 +332,18 @@ img{
 
 /* =====================Proyectos======================= */
 
+ .proyectosBx h3{
+    filter: drop-shadow(0 0 30px hsla(46, 87%, 38%, 0.774)) drop-shadow(rgba(181, 142, 13, 0.61)7%, 38%);
+}
+
 .proyectos{
     background: #fff;
     padding-top: 50px;
-    border-radius: 2%;
+    
 }
 
-.proyectos .boxprc{
+
+.proyectos .proyectosBx {
     position: relative;
     flex-wrap: wrap;
     flex-direction: row;
@@ -346,48 +351,62 @@ img{
     display: flex;
 }
 
-.prcyBx{
+.item-prcy {
     transition: 0.5s;
     width: 300px;
     min-height: 300px;
     box-shadow: 10px 10px 50px #969697;
     padding: 20px;
     border-radius: 5%;
-    margin: 1rem 0;
+    margin: 20px 0;
     background-color: #222;
     text-align: center;
     color: #fff;
-
 }
 
 
-
-.prcyBx p{
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 18px;
+.item-prcy h3{
+    padding-top: 20px;
     color: #fff;
-    filter: drop-shadow(0 0 30px #3fefef41) drop-shadow(0 0 5px #3fefef44);
+    filter: drop-shadow(0 0 30px #3fefef38) drop-shadow(0 0 5px #3fefef28);
 }
 
-.prcyBx img{
-    height: 350px;
-    width: 350px;
+.item-prcy p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header1{
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
     border-radius: 7px 7px 0px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-.boton a {
+.item-prcy img{
+    height: 300px;
+    width: 350px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     display: flex;
-    text-align: center;
-    justify-content: center;
+} 
+
+.boton a{
     text-decoration: none;
-    border: 1px solid gray;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid gray;
+    border-radius: 3px;
+    font-size: 15px;
     width: 150px;
     height: 28px;
+    text-align: center;
     padding-top: 3px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #fff;
     color: rgb(0, 0, 0);
     transition: 1s;
     margin-top: 15px;
@@ -399,17 +418,12 @@ img{
     color: rgb(0, 0, 0);
 }
 
-.prcyBx{
-    margin: 20px;
-}
-
-
 /* =====================Contacto======================= */
 
 .contacto{
     background: #111;
     padding-top: 50px;
-    border-radius: 2%;
+    
 }
 
 .fomrbx{
